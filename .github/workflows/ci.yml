@@ -37,7 +37,7 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/xcgc/images:debian/adoptopenjdk8
+          tags: ghcr.io/xcgc/images:adoptopenjdk8
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
