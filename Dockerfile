@@ -1,5 +1,7 @@
 FROM openjdk:11-slim
 
+LABEL org.opencontainers.image.source https://github.com/xcgc/images
+
 RUN apt-get update -y \
    && apt-get install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
    && useradd -d /home/container -m container
