@@ -1,6 +1,5 @@
 # Docker Images
-Docker images for Pterodactyl
+Docker Images for Pterodactyl
 
-# Available Tags
-- `debian_openjdk11`
-Platforms: `linux/amd64`, `linux/arm64`
+## Available Tags
+- `debian_openjdk11`: `linux/amd64`, `linux/arm64`
