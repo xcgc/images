@@ -2,7 +2,7 @@ name: ci
 
 on:
   push:
-    branches: debian/node12
+    branches: debian/node10
 
 jobs:
   docker:
@@ -12,7 +12,7 @@ jobs:
         name: Checkout
         uses: actions/checkout@v2
         with: 
-           ref: debian/node12
+           ref: debian/node10
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v1
@@ -37,7 +37,7 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/xcgc/images:debian_node12
+          tags: ghcr.io/xcgc/images:debian_node10
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
