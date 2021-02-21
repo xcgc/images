@@ -37,7 +37,7 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/xcgc/debian_openjdk11:latest
+          tags: ghcr.io/xcgc/images:debian_openjdk11
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
