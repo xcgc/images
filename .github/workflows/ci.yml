@@ -2,7 +2,7 @@ name: ci
 
 on:
   push:
-    branches: debian/adoptopenjdk8
+    branches: debian/adoptopenjdk11
 
 jobs:
   docker:
@@ -12,7 +12,7 @@ jobs:
         name: Checkout
         uses: actions/checkout@v2
         with: 
-           ref: debian/adoptopenjdk8
+           ref: debian/adoptopenjdk11
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v1
@@ -37,7 +37,7 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/xcgc/images:debian_adoptopenjdk8
+          tags: ghcr.io/xcgc/images:debian_adoptopenjdk11
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
