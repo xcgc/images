@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk14:debian-slim
+FROM adoptopenjdk/openjdk15:debian-slim
 
 LABEL org.opencontainers.image.source https://github.com/xcgc/images
 
