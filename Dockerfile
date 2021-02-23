@@ -1,9 +1,9 @@
-FROM node:12-buster-slim
+FROM python:3.8-slim-buster
 
 LABEL org.opencontainers.image.source https://github.com/xcgc/images
 
 RUN apt-get update -y \
-   && apt-get install -y curl ca-certificates openssl git tar zip sqlite fontconfig tzdata iproute2 ffmpeg sqlite3 build-essential python3 \
+   && apt-get install -y curl ca-certificates openssl git tar zip sqlite fontconfig tzdata iproute2 gcc g++ ffmpeg \
    && useradd -d /home/container -m container
 
 USER container
