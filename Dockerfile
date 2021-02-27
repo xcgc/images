@@ -8,6 +8,9 @@ RUN apt-get update -y \
 
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 
+RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl \
+   && chmod a+rx /usr/local/bin/youtube-dl
+
 USER container
 ENV USER=container 
 ENV HOME=/home/container
