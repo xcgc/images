@@ -1,5 +1,5 @@
-# Docker Images
-Docker Images for [Pterodactyl Panel](https://pterodactyl.io)
+# Images
+Unofficial Docker Images for [Pterodactyl Panel](https://pterodactyl.io). Images are hosted on `ghcr.io`. To use any of these images, use `ghcr.io/xcgc/images:<tag>`
 
 ## Supported Architecture
 - `AMD64`
