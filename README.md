@@ -1,3 +1,6 @@
+# No longer maintained
+Please use https://github.com/pterodactyl/yolks
+
 # Images
 Unofficial Docker Images for [Pterodactyl Panel](https://pterodactyl.io). Images are hosted on `ghcr.io`. To use any of these images, use `ghcr.io/xcgc/images:<tag>`
 
